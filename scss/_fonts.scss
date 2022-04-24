@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400;1,500&display=swap');
+
+$fontMain:'Lora', sans-serif;
+
+* {
+	padding:0;
+	margin: 0;
+}
+
+//Definicion de variable
+
+//colores
+$fondoNav: #dacfda;
+$mainColor: #c1bdd6;
+$secondaryColor:#c400c7;
+$keyColor:#d7a6b0;
+$fondoCont: #FBEAFF;
+$darkBlue: #103783;
+$fondoProdu: #eae9f5;
+
+//Sizing
+$w-100: 100%;
+$w-50: 50%;
+$w-25: 50%;
+
+//Variables para los textos
+
+$textSm: 1em;
+
+h1 {
+	font-size: 3em;
+	padding: 10px;
+	marging: 10px;
+	color: $secondaryColor;
+}
+
+h2 {
+	font-size: 2em;
+	padding: 10px;
+	marging: 10px;
+	color: $secondaryColor;
+}
+
+h3 {
+	font-size: 1em;
+	padding: 10px;
+	marging: 10px;
+	color: $secondaryColor;
+}
+
+//map
+$paleta: (
+    'uno': #e7cfe3,);
+
+.bg-map{
+	background-color: map-get($map:$paleta,$key:'uno');
+
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+  h1
+  {
+    font-size: 2em;
+    color: $darkBlue;
+}
+
+  h2 {
+    font-size: 1em;
+    color: $darkBlue; 
+}
+
+  h3 {
+  	font-size: 0.8em;
+    color: $darkBlue;
+ }
+}
+
+
+
+
+  
